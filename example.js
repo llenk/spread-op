@@ -21,3 +21,18 @@ const realUpdatedBowler = {
     ...bowler, // this has to go first so the real version wins (for latestScore)
     latestScore: 41
 } // better code!
+
+// const caterpillarToButterfly = caterpillar => ({name: caterpillar, isButterfly: true,});
+
+// console.log(caterpillarToButterfly('Ben'));
+
+const caterpillarArray = [
+    'Ben', 
+    'Daisy',
+    'Charlotte',
+    'Logan',
+];
+
+const butterflyArray = caterpillarArray.map(caterpillar => ({name: caterpillar, isButterfly: true,}));
+
+console.log(butterflyArray);
